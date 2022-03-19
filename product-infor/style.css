@@ -1,0 +1,160 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+a:hover {
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a:link {
+    text-decoration: none;
+}
+
+.nav-menu .navbar-collapse li {
+    display: inline;
+    list-style: none;
+}
+.nav-menu .navbar-collapse a {
+    color: black;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    border-bottom: 3px solid #ad974f;
+}
+
+.navbar-fixed-top.scrolled .navbar-light {
+    color: black;
+}
+
+.nav-menu {
+    z-index: 999;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.carousel-caption {
+    color: #fff;
+    position: absolute;
+    top: 45%;
+}
+
+.carousel-caption a {
+    color: black;
+    padding: 20px;
+    background: lightgrey;
+    border-radius: 10px;
+}
+
+.carousel-caption h3 {
+    font-family: 'Great Vibes', Helvetica, sans-serif;
+}
+
+.hr {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 1px;
+    background: #ad974f;
+}
+
+.contact-site .row img {
+    vertical-align: middle;
+    width: 75%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .navbar-collapse {
+        margin-left: -25px;
+    }
+    .navbar-collapse ul {
+        text-align: center;
+    }
+    .nav-logo {
+        text-align: center;
+    }
+    .navbar-collapse a {
+        padding-left: 10px;
+    }
+}
+.nav-small{
+    display: none;
+}
+@media only screen and (max-width: 420px) {
+    .nav-logo{
+        float: left;
+        width: 65%;
+    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .navbar-collapse{
+        display: none;
+    }
+    .nav-small{
+        display: block;
+    }
+
+    
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ad974fe6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #ad974f;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+}

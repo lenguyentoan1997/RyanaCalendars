@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Mail-T/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Mail-T/mailstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="../Footercln/css-TFT/ftclone.css">
+    <link rel="stylesheet" href="../Footercln/icon/font-awesome/css/all.css">
+    <link rel="stylesheet" href="../boxchat/boxchat.css">
+    <link rel="stylesheet" href="../Menu/style.css">
+    <link rel="stylesheet" href="../Menu/stylelogin/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../boxchat/boxchat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <header class="nav-menu navbar-fixed-top">
+        <div class="container">
+            <div class="row navbar-light" style="display: inline-block;">
+                <div class="nav-logo col-lg-4" style="width: 80%;">
+                    <a href="../Home Page/IndexHomePage.html"><img src="../Menu/image/your-logo-ig.PNG" style="width: 80%;"></a>
+                </div>
+                <div class="nav-small">
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="../Home Page/IndexHomePage.html">Explore</a>
+                        <a href="../Page About/indexabout.html">About</a>
+                        <a href="../Products/producst-T.html">Product</a>
+                        <a href="../Mail-T/mail-T.html">Contact</a>
+                        <a href="../Map-T/map-t.html"><i class="fas fa-map-marker-alt"></i></a>
+                        <a><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i></a>
+                        <div class="modal" id="id01">
+                            <form class="modal-content animate">
+                                <div class="img-container">
+                                    <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                    <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                </div>
+                                <div class="container pd-16">
+                                    <label><b>Username</b></label>
+                                    <input class="input-name" type="text" placeholder="Enter Username" required>
+                                    <label><b>Password</b></label>
+                                    <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                    <button type="submit" class="btn-login">Login</button>
+                                    <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                </div>
+                                <div class="container pd-16" style="background-color: #f1f1f1;">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password ?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            var modal = document.getElementById('id01');
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft = "0";
+                        }
+                    </script>
+                </div>
+                <div class="navbar-collapse col-lg-8" style="width: unset;">
+                    <ul style="margin-top: 25px;">
+                        <li><a href="../Home Page/IndexHomePage.html">Explore</a></li>
+                        <li><a href="../Page About/indexabout.html">About</a></li>
+                        <li><a href="../Products/producst-T.html">Product</a></li>
+                        <li><a href="../Mail-T/mail-T.html">Contact</a></li>
+                        <li><a href="../Map-T/map-t.html"><i class="fas fa-map-marker-alt"></i></i></i></a></li>
+                        <li><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                    </div>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                                <input type="checkbox" checked="checked"> Remember me
+                                            </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- contact -->
+    <div class="contact-site" style="background: white; margin-top: 10%;">
+        <div class="container nav-contact">
+            <div class="nav justify-content-center" style="margin-bottom: 20px;">
+                <h4 style="color: #ad974f; font-size: 40px;">TEAM MEMBER OF US</h4>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-4 containerimgmail" style="margin-top: 15px;height: 90%;">
+                    <img class="img-circle" src="../Image cho project/contact-vhl.jpg" style="width:100%;height: 100%;">
+                    <div class="nav-item overleyimgmail" style="text-align: center;">
+                        <div class="text-content">
+                            <br>
+                            <div style="text-align: center;">
+                                <h5 style="color: black;">Vương Hoàng Long</h5>
+                            </div>
+                            <div style="text-align: center;">Facebook: <a class="text-color-t" style="font-weight: 900;" href="https://www.facebook.com/longhoang.vuong.98">Hoàng Long</a></div>
+                            <div style="text-align: center;">Email: <a class="text-color-t" style="font-weight: 900;" href="hoanglong5249@gmail.com">hoanglong5249@gmail.com</a></div>
+                            <div style="text-align: center;">Hotline: <a class="text-color-t" style="font-weight: 900;" href="#">0786503186</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 containerimgmail" style="margin-top: 15px;height: 90%;">
+                    <img class="img-circle " src="../Image cho project/Contact-LNK.jpg" style="width:100%;height: 100%;">
+                    <div class="nav-item overleyimgmail" style="text-align: center;">
+                        <div class="text-content">
+                            <br>
+                            <div style="text-align: center;">
+                                <h5 style="color: black;">Lê Nguyên Kha</h5>
+                            </div>
+                            <div style="text-align: center;">Facebook: <a class="text-color-t" style="font-weight: 900;" href="https://www.facebook.com/longhoang.vuong.98">Kha Lê</a></div>
+                            <div style="text-align: center;">Email: <a class="text-color-t" style="font-weight: 900;" href="#">lenguyenkha881999@gmail.com</a></div>
+                            <div style="text-align: center;">Hotline: <a class="text-color-t" style="font-weight: 900;" href="#">0935567681</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 containerimgmail" style="margin-top: 15px;height: 90%;">
+                    <img class="img-circle " src="../Image cho project/Contact-LNT.jpg" style="width:100%">
+                    <div class="nav-item overleyimgmail" style="text-align: center;">
+                        <div class="text-content">
+                            <br>
+                            <div class="text-content">
+                                <div style="text-align: center;">
+                                    <h5 style="color: black;">Lê Nguyễn Toàn</h5>
+                                </div>
+                                <div style="text-align: center;">Facebook: <a class="text-color-t" style="font-weight: 900;" href="https://www.facebook.com/toann.97">Toan Le</a></div>
+                                <div style="text-align: center;">Email: <a class="text-color-t" style="font-weight: 900;" href="hoanglong5249@gmail.com">lenguyentoan1997@gmail.com</a></div>
+                                <div style="text-align: center;">Hotline: <a class="text-color-t" style="font-weight: 900;" href="#">0935320352</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="hr"></div>
+    <br>
+    <div class="container ctnfont-T" style=" margin-top: 30px;">
+        <div class="row">
+            <div class="col">
+                <h5 style="letter-spacing: 4px; font-size: 15px;" class="tcenter-T">MAIL US</h5>
+                <hr class="text-color-t" style="width: 5%;">
+                <h2 class="tcenter-T" style="font-size: 40px;">Let's<span style="color: #ad974f;"> Talk</span></h2>
+                <br>
+                <h6 class="tcenter-T" style="color:gray;font-size: 18px;">Fill the form below and let us know how can we help you.</h6>
+                <br><br>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col">
+                            <form>
+                                <div class="input-T">
+                                    <input type="email" class="form-control bginput-T" id="exampleFormControlInput1" placeholder="Email address*" required="required">
+                                </div>
+                                <div class="input-T">
+                                    <input type="name" class="form-control bginput-T" id="exampleFormControlInput1" placeholder="Your Name*" required="required">
+                                    <br>
+                                </div>
+
+                                <div style="padding: 5px 10px;">
+                                    <textarea id="form_message " name="message" rows="4" class="form-control light-grey input1-T" placeholder="Your Message*" required="required" data-error="Message is required."></textarea>
+                                </div>
+
+                                <div class="tcenter-T " style="margin-top: 20px;">
+                                    <input type="submit" name="submit" id="submit" class=" btn btn-dark btnT-1 animated pulse" value="SEND">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <div class=" container-fluid bgt1 ">
+            <br><br>
+            <div class="container ctnt2">
+                <h5 style=" font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: 500;
+            width: 100%;
+            margin: 15px 0 0 0;
+            text-transform: uppercase;
+            display: block;
+            color: black;">stay connected</h5>
+                <hr style="border-color: #ad974f;
+            width: 5%;">
+                <br>
+                <div class="scoial">
+                    <a href="" class="txa"><i class="fab fa-facebook-square iconftclone icon iconfb "></i>
+                </a>
+                    <a href="" class="txa">
+                        <i class="fab fa-instagram iconftclone icon "></i>
+                    </a>
+                    <a href="" class="txa">
+                        <i class="fab fa-linkedin iconftclone icon "></i>
+                    </a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <br>
+        <div class="container ">
+            <div class="link-T">
+                <a href="../Products/calenderdisplay.html" class="spft">Canlendar</a>
+                <a href="../Products/diariesdisplay.html" class="spft">Diaries</a>
+                <a href="../Products/journal.html" class="spft ">Journal</a>
+                <a href="../Products/folderdisplay.html" class="spft">Folders</a>
+                <a href="../Mail-T/mail-T.html" class="spft">Contact</a>
+                <a href="../Products/PriceProduct.xlsx" class="spft " data-toggle="tooltip" data-placement="bottom" title="Click Download!" download>Price List</a>
+
+                <script>
+                    $(document).ready(function() {
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                </script>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <p class="color-t">
+                        COMPANY RYANA CALENDARS</p>
+                    <p class="style-pFT"><i class="fas fa-map-marker-alt color-t"></i> 56 LE DUAN ST - DA NANG CITY</p>
+                    <p class="style-pFT"><i class="fas fa-phone-alt color-t"></i> PHONE:0236 095385</p>
+                    <p class="style-pFT"><i class="fas fa-envelope color-t"></i></i> MAIL:RyanaCalendars @gmail.com</p>
+                    <p class="style-pFT"><i class="fas fa-fax color-t"></i> FAX:(650)123-4567</p>
+                </div>
+
+                <div class="col-4">
+
+                    <p class="color-t">
+                        CUSTOMER SUPPORT</p>
+                    <p class="style-pFT">
+                        <a href="../Shoppingguide/shoppingguide.html" class="spft">SHOPPING GUIDE</a></p>
+                    <P class="style-pFT ">
+                        <a href="" class="spft">PAYMENT GUIDE</a>
+                    </P>
+                    <P class="style-pFT ">
+                        <a href="" class="spft">WARRANTY POLICY</a></P>
+                </div>
+                <div class="col-3 ">
+                    <p class="color-t ">
+                        PAYMENT METHODS</p>
+
+                    <p>
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/jcb.svg " width="54 " alt=" ">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
+    </footer>
+    <div class="chat-widget" id="chatWidget">
+        <!-- chat toggle -->
+        <input id="chat-widget-toggle" class="chat-widget-toggle" type="checkbox">
+        <!-- chat close button -->
+        <label title="close chat" for="chat-widget-toggle" class="chat-widget-button chat-close-button">
+            X
+        </label>
+        <div class="chat-box">
+            <div class="chat-message-box">
+                <!--  chat header -->
+                <div class="chat-header">
+                    <h1 class="chat-title">
+                        <span class="chat-title-primary">Ryana Calendars</span>
+                        <span class="chat-title-sub">CEO</span>
+                    </h1>
+                </div>
+                <!--   chat message  -->
+                <div class="chat-messages">
+                    <div class="chat-messages-content">
+                        <div class="chat-message -left">
+
+                            <div class="chat-message-text">
+                                Hello everyone!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chat input box  -->
+                <div class="chat-form-box">
+                    <form class="chat-form" id="chat-form" name="chat-form">
+                        <input class="chat-form-input" type="text" placeholder="Type your message....">
+                        <button title="send message" type="submit" class="chat-form-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- chat open button -->
+        <label title="open chat" for="chat-widget-toggle" class="chat-widget-button chat-open-button">
+            <h5 style=" color: #fff;">Chat US</h5>
+        </label>
+    </div>
+</body>
+
+</html>

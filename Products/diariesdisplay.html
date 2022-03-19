@@ -1,0 +1,720 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Products/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="../Products/icon/font-awesome/css/all.css">
+    <link rel="stylesheet" href="../Products/producst-T.css">
+    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="../boxchat/boxchat.css">
+    <link rel="stylesheet" href="../menu-contact-our client/style.css">
+    <link rel="stylesheet" href="../menu-contact-our client/product-infor.css">
+    <link rel="stylesheet" href="../Footercln/css-TFT/ftclone.css">
+    <link rel="stylesheet" href="../Menu/style.css">
+    <link rel="stylesheet" href="../Menu/stylelogin/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Products/producst-T.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="produtcs-T">
+    <<script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <header class="nav-menu navbar-fixed-top">
+        <div class="container">
+            <div class="row navbar-light" style="display: inline-block;">
+                <div class="nav-logo col-lg-4" style="width: 80%;">
+                    <a href="../Home Page/IndexHomePage.html"><img src="../Menu/image/your-logo-ig.PNG" style="width: 80%;"></a>
+                </div>
+                <div class="nav-small">
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="../Home Page/IndexHomePage.html">Explore</a>
+                        <a href="../Page About/indexabout.html">About</a>
+                        <a href="../Products/producst-T.html">Product</a>
+                        <a href="../Mail-T/mail-T.html">Contact</a>
+                        <a href="../Map-T/map-t.html"><i class="fas fa-map-marker-alt"></i></a>
+                        <a><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i></a>
+                        <div class="modal" id="id01">
+                            <form class="modal-content animate">
+                                <div class="img-container">
+                                    <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                    <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                </div>
+                                <div class="container pd-16">
+                                    <label><b>Username</b></label>
+                                    <input class="input-name" type="text" placeholder="Enter Username" required>
+                                    <label><b>Password</b></label>
+                                    <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                    <button type="submit" class="btn-login">Login</button>
+                                    <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                </div>
+                                <div class="container pd-16" style="background-color: #f1f1f1;">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password ?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            var modal = document.getElementById('id01');
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft = "0";
+                        }
+                    </script>
+                </div>
+                <div class="navbar-collapse col-lg-8" style="width: unset;">
+                    <ul style="margin-top: 25px;">
+                        <li><a href="../Home Page/IndexHomePage.html">Explore</a></li>
+                        <li><a href="../Page About/indexabout.html">About</a></li>
+                        <li><a href="../Products/producst-T.html">Product</a></li>
+                        <li><a href="../Mail-T/mail-T.html">Contact</a></li>
+                        <li><a href="../Map-T/map-t.html"><i class="fas fa-map-marker-alt"></i></i></i></a></li>
+                        <li><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                    </div>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                                <input type="checkbox" checked="checked"> Remember me
+                                            </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="k-title-header mt-100">
+                    <a href="#" class="k-gold ">HOME</a><span class="k-white"> / PRODUCTS</span>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <div class="container k-explore">
+        <h5 class="k-title">
+            RYANA CALENDARS
+        </h5>
+        <br>
+        <span class="line-gold"></span>
+        <h2 class="k-title-2">
+            It's time to
+            <span class="k-gold">shopping</span>
+        </h2>
+        <h6 class="k-title-3">
+            Choose a product that suits you best, we will help you.
+            <br> Start shopping everything today !
+        </h6>
+        <br>
+    </div>
+
+    <div class="container k-explore">
+        <div class="row">
+            <div class="col ">
+                <div class="work">
+                    <div class="category-buttons">
+                        <a href="#" data-group="all">All</a>
+                        <a href="#" data-group="diaries" class="all">DIARIES</a>
+                        <a href="#" data-group="calendar">CALENDARS</a>
+                        <a href="#" data-group="folder">FOLDERS</a>
+                        <a href="#" data-group="journal">JOURNAL</a>
+                        <a href="#" data-group="sale" style="background-color: #ad974f; color:white;">SALE</a>
+                    </div>
+                    <!--search-->
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search RyanaCalendars">
+                    </div>
+
+                    <div id="grid" class="grid " style="height: 840px;">
+                        <div class="card cardproT" href="#" data-groups="calendar," style="height: auto; position: absolute; left: 0%; top: 0px;">
+                            <img src="../Products/imgpro-T/Calendar 6.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Calendar6.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor"><i class="fas fa-shopping-cart shoppingprot"></i></a>
+                            <p class="stylepproT">$16.99</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="calendar," style="height: auto; position: absolute; left: 34%; top: 0px;">
+                            <img src="../Products/imgpro-T/Calendar 5.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Calendar5.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$9.99</p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries," style="height: auto; position: absolute; left: 0%; top: 0px;">
+                            <img src="../Products/imgpro-T/Diaries 1.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries1.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$18.99 </p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="calendar," style="height: auto; position: absolute; left: 68%; top: 0px;">
+                            <img src="../Products/imgpro-T/Calendar 3.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries3.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$88.99 </p>
+                        </div>
+
+                        <div class="card cardproT" href="#" data-groups="calendar,sale," style="height: auto; position: absolute; left: 0%; top: 420px;">
+                            <img src="../Products/imgpro-T/Calendar 2.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-30%</div>
+                            </div>
+
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Calendar2.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$15</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$10.5</p>
+                            <p></p>
+                        </div>
+
+                        <div class="card cardproT" href="#" data-groups="calendar," style="height: auto; position: absolute; left: 34%; top: 420px;">
+                            <img src="../Products/imgpro-T/Calendar 1.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Calendar1.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$16.99 </p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="calendar," style="height: auto; position: absolute; left: 68%; top: 420px;">
+                            <img src="../Products/imgpro-T/Calendar 4.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Calendar4.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$14.99 </p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries,sale," style="height: auto; position: absolute; left: 34%; top: 0px;">
+                            <img src="../Products/imgpro-T/Diaries 2.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-20%</div>
+                            </div>
+
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries2.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$25</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$20</p>
+                            <p></p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries," style="height: auto; position: absolute; left: 68%; top: 0px;">
+                            <img src="../Products/imgpro-T/Diaries 3.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries3.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$19.50</p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries," style="height: auto; position: absolute; left: 0%; top: 420px;">
+                            <img src="../Products/imgpro-T/Diaries 4.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries4.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$18.00</p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries,sale," style="height: auto; position: absolute; left: 34%; top: 420px;">
+                            <img src="../Products/imgpro-T/Diaries 5.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-10%</div>
+                            </div>
+
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries5.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$88.99</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$78.99</p>
+                            <p></p>
+                        </div>
+                        <div class="card cardproT show" href="#" data-groups="diaries," style="height: auto; position: absolute; left: 68%; top: 420px;">
+                            <img src="../Products/imgpro-T/Diaries 6.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Diaries6.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$10.89</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder," style="height: auto; position: absolute; left: 0%; top: 1680px;">
+                            <img src="../Products/imgpro-T/Folders 1.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders1.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$12.95</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder," style="height: auto; position: absolute; left: 34%; top: 1680px;">
+                            <img src="../Products/imgpro-T/Folders 2.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders2.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$9.49</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder," style="height: auto; position: absolute; left: 68%; top: 1680px;">
+                            <img src="../Products/imgpro-T/Folders 3c.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders3.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$7.00</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder,sale," style="height: auto; position: absolute; left: 0%; top: 2100px;">
+                            <img src="../Products/imgpro-T/Folders 4.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-50%</div>
+                            </div>
+
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders4.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$11</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$5.5</p>
+                            <p></p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder,sale," style="height: auto; position: absolute; left: 34%; top: 2100px;">
+                            <img src="../Products/imgpro-T/Folders 5.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-30%</div>
+                            </div>
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders5.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$15</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$9.5</p>
+                            <p></p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="folder," style="height: auto; position: absolute; left: 68%; top: 2100px;">
+                            <img src="../Products/imgpro-T/Folders 6.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Folders6.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$15.90</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal," style="height: auto; position: absolute; left: 0%; top: 2520px;">
+                            <img src="../Products/imgpro-T/Journal 1.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal1.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$14.99</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal," style="height: auto; position: absolute; left: 34%; top: 2520px;">
+                            <img src="../Products/imgpro-T/Journal 2.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal2.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$16.08</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal,sale," style="height: auto; position: absolute; left: 68%; top: 2520px;">
+                            <img src="../Products/imgpro-T/Journal 3.jpg" class="imgpro-Tall">
+                            <div class="text-rightproani">
+                                <div class="text-rightproT">-10%</div>
+                            </div>
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal3.html" class="k-gold">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="" class="shoppingprocolorsale">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p style="display:contents; text-decoration:line-through ;" class=" k-gold">$100</p>
+                            <p style="display:contents;" class="stylepproT k-gold">$90</p>
+                            <p></p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal," style="height: auto; position: absolute; left: 0%; top: 2940px;">
+                            <img src="../Products/imgpro-T/Journal 4.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal4.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$7.99</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal," style="height: auto; position: absolute; left: 34%; top: 2940px;">
+                            <img src="../Products/imgpro-T/Journal 5.jpg" class="imgpro-Tall">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal5.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$50.00</p>
+                        </div>
+                        <div class="card cardproT" href="#" data-groups="journal," style="height: auto; position: absolute; left: 68%; top: 2940px;">
+                            <img src="../Products/imgpro-T/Journal 6.jpg" class="imgpro-Tall ">
+                            <button class="btnproT animated pulse"><a href="../product-infor/Product-Infor-Journal6.html" style="color:white;">MORE DETAILS</a></button>
+                            <div class="startsprot">
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star startcolorpro"></i>
+                                <i class="fas fa-star "></i>
+                            </div>
+                            <a href="" class="shoppingprocolor">
+                                <i class="fas fa-shopping-cart shoppingprot"></i>
+                            </a>
+                            <p class="stylepproT">$7.99</p>
+                        </div>
+                        <div class="guide" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class=" container-fluid bgt1 ">
+            <br><br><br>
+            <div class="container ctnt2">
+                <h5 style=" font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: 500;
+            width: 100%;
+            margin: 15px 0 0 0;
+            text-transform: uppercase;
+            display: block;
+            color: black;">stay connected</h5>
+                <hr style="border-color: #ad974f;
+            width: 5%;">
+                <br>
+                <div class="scoial">
+                    <a href="" class="txa"><i class="fab fa-facebook-square iconftclone icon iconfb "></i>
+                </a>
+                    <a href="" class="txa">
+                        <i class="fab fa-instagram iconftclone icon "></i>
+                    </a>
+                    <a href="" class="txa">
+                        <i class="fab fa-linkedin iconftclone icon "></i>
+                    </a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <br>
+        <div class="container ">
+            <div class="link-T">
+                <a href="../Products/calenderdisplay.html" class="spft">Canlendar</a>
+                <a href="../Products/diariesdisplay.html" class="spft">Diaries</a>
+                <a href="../Products/journal.html" class="spft ">Journal</a>
+                <a href="../Products/folderdisplay.html" class="spft">Folders</a>
+                <a href="../Mail-T/mail-T.html" class="spft">Contact</a>
+                <a href="../Products/PriceProduct.xlsx" class="spft " data-toggle="tooltip" data-placement="bottom" title="Click Download!" download>Price List</a>
+
+                <script>
+                    $(document).ready(function() {
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                </script>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <p class="color-t">
+                        COMPANY RYANA CALENDARS</p>
+                    <p class="style-pFT"><i class="fas fa-map-marker-alt color-t"></i> 56 LE DUAN ST - DA NANG CITY</p>
+                    <p class="style-pFT"><i class="fas fa-phone-alt color-t"></i> PHONE:0236 095385</p>
+                    <p class="style-pFT"><i class="fas fa-envelope color-t"></i> MAIL:RyanaCalendars@gmail.com</p>
+                    <p class="style-pFT"><i class="fas fa-fax color-t"></i> FAX:(650)123-4567</p>
+                </div>
+
+                <div class="col-4">
+
+                    <p class="color-t">
+                        CUSTOMER SUPPORT</p>
+                    <p class="style-pFT">
+                        <a href="" class="spft">SHOPPING GUIDE</a></p>
+                    <p class="style-pFT ">
+                        <a href="" class="spft">PAYMENT GUIDE</a>
+                    </p>
+                    <p class="style-pFT ">
+                        <a href="" class="spft">WARRANTY POLICY</a></p>
+                </div>
+                <div class="col-3 ">
+                    <p class="color-t ">
+                        PAYMENT METHODS</p>
+
+                    <p>
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/jcb.svg " width="54 " alt=" ">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
+    </footer>
+
+    <div class="chat-widget" id="chatWidget">
+        <!-- chat toggle -->
+        <input id="chat-widget-toggle" class="chat-widget-toggle" type="checkbox">
+        <!-- chat close button -->
+        <label title="close chat" for="chat-widget-toggle" class="chat-widget-button chat-close-button">
+            X
+        </label>
+        <div class="chat-box">
+            <div class="chat-message-box">
+                <!--  chat header -->
+                <div class="chat-header">
+                    <h1 class="chat-title">
+                        <span class="chat-title-primary">Ryana Calendars</span>
+                        <span class="chat-title-sub">CEO</span>
+                    </h1>
+                </div>
+                <!--   chat message  -->
+                <div class="chat-messages">
+                    <div class="chat-messages-content">
+                        <div class="chat-message -left">
+
+                            <div class="chat-message-text">
+                                Hello everyone!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chat input box  -->
+                <div class="chat-form-box">
+                    <form class="chat-form" id="chat-form" name="chat-form">
+                        <input class="chat-form-input" type="text" placeholder="Type your message....">
+                        <button title="send message" type="submit" class="chat-form-button">
+                    
+                </button></form>
+                </div>
+            </div>
+        </div>
+        <!-- chat open button -->
+        <label title="open chat" for="chat-widget-toggle" class="chat-widget-button chat-open-button">
+            <h5 style=" color: #fff;">Chat US</h5>
+        </label>
+    </div>
+
+
+
+
+</body>
+
+</html>
